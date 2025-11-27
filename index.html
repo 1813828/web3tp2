@@ -4,8 +4,41 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+
+      <!-- Bootstrap CSS depuis node_modules -->
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+
+    <!-- Bootstrap Icons CSS depuis node_modules -->
+    <link rel="stylesheet" href="./node_modules/bootstrap-icons/font/bootstrap-icons.css">
+
+<head>
+  <!-- ... -->
+  <script type="importmap">
+  {
+    "imports": {
+      "animejs": "./node_modules/animejs/dist/bundles/anime.esm.min.js"
+      "chart.js": "./node_modules/chart.js/dist/chart.umd.js"
+    }
+  }
+  </script>
+  <script src="./src/js/script.js" type="module"></script>
 </head>
 <body>
     
+    
+
+    <!-- Bootstrap JS depuis node_modules -->
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.bundle.min.js" defer></script>
+
+    <!-- Ton JS -->
+    <script src="./src/js/bootstrap.js" defer></script>
+    <script type="module" src="./src/js/animejs.js"></script>
+    <script type="module" src="./src/js/chartjs.js"></script>
+
+
+
+
+
+
 </body>
 </html>
