@@ -1,0 +1,7 @@
+.grille {
+  display: grid;
+  grid-template-columns: 690px 690px 1fr;
+   grid-template-rows: 300px 300px 330px;
+   
+}
+
