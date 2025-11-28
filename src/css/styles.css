@@ -1,3 +1,9 @@
+@font-face {
+  font-family: "Ninjargon";
+  src: url("https://assets.codepen.io/9367036/Ninjargon-Regular.otf");
+}
+
+
 html {
   height: 100%;
 }
@@ -5,6 +11,7 @@ html {
 body {
   height: 100vh;
   margin: 0;        /* retire la marge par défaut qui crée un débordement */
+  background-color: #1e293b;
 }
 
 .grille_01 {
@@ -20,6 +27,7 @@ body {
 .grille_02 {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 1fr);
   width: 100%;
   height: 100%;
   gap: 16px; 
@@ -38,7 +46,7 @@ body {
 }
 
 .system {
-  background-color: brown;
+  background-color: #020617;
 }
 
 .alert {
@@ -48,6 +56,7 @@ body {
 .psycho {
   background-color: red;
   grid-column: span 2 / span 2;
+  height: 100%;
 }
 
 .cpu {
@@ -61,4 +70,22 @@ body {
 .corps {
   background-color: blue;
   grid-column: span 2 / span 2;
+}
+
+
+
+/* Chart */
+.chart-container {
+  width: 100%;
+  height: 100%;
+}
+
+.chiffre {
+  width: 10vw;
+  text-align: center;
+
+  &.alt {
+    font-family: Ninjargon;
+    font-size: 70px;
+  }
 }
