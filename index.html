@@ -29,6 +29,7 @@
   <script src="./src/js/bootstrap.js" defer></script>
   <script type="module" src="./src/js/animejs.js"></script>
   <script type="module" src="./src/js/chartjs.js"></script>
+  <script type="module" src="./src/js/maplibre.js"></script>
 
 </head>
 
@@ -56,73 +57,79 @@
 
         <!-- STATS 1 -->
         <div>
-            <div class="circle-container">
-              <span>0</span>
-              <svg width="160" height="160" viewBox="0 0 160 160">
-                <circle class="ring" cx="80" cy="80" r="60" fill="none" stroke="#fff" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="16" />
-                <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="16" />
-              </svg>
-            </div>
+          <div class="circle-container">
+            <span>0</span>
+            <svg width="160" height="160" viewBox="0 0 160 160">
+              <circle class="ring" cx="80" cy="80" r="60" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+              <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+            </svg>
+          </div>
 
-            <div class="psycho-title">PSYCHOLOGIE</div>
+          <div class="psycho-title">PSYCHOLOGIE</div>
 
         </div>
 
 
         <!-- STATS 2 -->
         <div>
-            <div class="circle-container">
-              <span>0</span>
-              <svg width="160" height="160" viewBox="0 0 160 160">
-                <circle class="ring" cx="80" cy="80" r="60" fill="none" stroke="#fff" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="16" />
-                <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="16" />
-              </svg>
-            </div>
-            <div class="psycho-title">PHYSIQUE</div>
+          <div class="circle-container">
+            <span>0</span>
+            <svg width="160" height="160" viewBox="0 0 160 160">
+              <circle class="ring" cx="80" cy="80" r="60" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+              <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+            </svg>
+          </div>
+          <div class="psycho-title">PHYSIQUE</div>
         </div>
 
 
         <!-- STATS 3 -->
         <div>
-            <div class="circle-container">
-              <span>0</span>
-              <svg width="160" height="160" viewBox="0 0 160 160">
-                <circle class="ring" cx="80" cy="80" r="60" fill="none" stroke="#fff" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="16" />
-                <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="16" />
-              </svg>
-            </div>
-            <div class="psycho-title">AURA</div>
+          <div class="circle-container">
+            <span>0</span>
+            <svg width="160" height="160" viewBox="0 0 160 160">
+              <circle class="ring" cx="80" cy="80" r="60" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+              <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+            </svg>
+          </div>
+          <div class="psycho-title">AURA</div>
         </div>
 
 
         <!-- STATS 4 -->
         <div>
-            <div class="circle-container">
-              <span>0</span>
-              <svg width="160" height="160" viewBox="0 0 160 160">
-                <circle class="ring" cx="80" cy="80" r="60" fill="none" stroke="#fff" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="16" />
-                <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-linecap="round"
-                  stroke-linejoin="round" stroke-width="16" />
-              </svg>
-            </div>
-            <div class="psycho-title">LIBIDO</div>
+          <div class="circle-container">
+            <span>0</span>
+            <svg width="160" height="160" viewBox="0 0 160 160">
+              <circle class="ring" cx="80" cy="80" r="60" fill="none" stroke="#fff" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+              <circle cx="80" cy="80" r="60" fill="none" stroke="rgba(0,0,0,0.2)" stroke-linecap="round"
+                stroke-linejoin="round" stroke-width="16" />
+            </svg>
+          </div>
+          <div class="psycho-title">LIBIDO</div>
         </div>
 
 
       </div>
 
       <!-- OBJECTIF COMPONENT -->
-      <div class="objectif item">d</div>
+      <div class="objectif item">
+        <div id="carte"></div>
+      </div>
 
       <!-- CPU COMPONENT -->
-      <div class="cpu item">e</div>
+      <div class="cpu item">
+        <div class="chart-container">
+          <canvas id="a"></canvas>
+        </div>
+      </div>
     </div>
 
     <div class="corps item">f</div>

@@ -81,6 +81,7 @@ body {
 
 .objectif {
   background-color: purple;
+  overflow: hidden;
 }
 
 .corps {
@@ -121,3 +122,12 @@ body {
     transform: rotate(-90deg);
   }
 }
+
+#carte {
+  width: 100%;
+  height: 250px;
+  position: relative;
+  overflow: hidden;
+}
+
+
