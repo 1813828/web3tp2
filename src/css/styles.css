@@ -87,6 +87,9 @@ body {
 .corps {
   background-color: blue;
   grid-column: span 2 / span 2;
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
 }
 
 
