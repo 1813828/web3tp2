@@ -17,7 +17,8 @@
     {
       "imports": {
         "animejs": "./node_modules/animejs/dist/bundles/anime.esm.min.js",
-        "chart.js": "./node_modules/chart.js/dist/chart.umd.js"
+        "chart.js": "./node_modules/chart.js/dist/chart.umd.js",
+         "vfx-js": "https://esm.sh/@vfx-js/core"
       }
     }
   </script>
@@ -31,6 +32,8 @@
   <script type="module" src="./src/js/maplibre.js"></script>
   <script type="module" src="./src/js/zdog.js"></script>
   <script type="module" src="./src/js/tonejs.js"></script>
+  <script type="module" src="./src/js/vfx-page.js" defer></script>
+
 
 </head>
 
@@ -68,7 +71,7 @@
             </svg>
           </div>
 
-          <div class="psycho-title">PSYCHOLOGIE <i class="bi bi-badge-8k"></i></div>
+          <div class="psycho-title">Stressed <i class="bi bi-badge-8k"></i></div>
 
         </div>
 
@@ -84,7 +87,7 @@
                 stroke-linejoin="round" stroke-width="16" />
             </svg>
           </div>
-          <div class="psycho-title">PHYSIQUE</div>
+          <div class="psycho-title">Calm</div>
         </div>
 
 
@@ -99,7 +102,7 @@
                 stroke-linejoin="round" stroke-width="16" />
             </svg>
           </div>
-          <div class="psycho-title">AURA</div>
+          <div class="psycho-title">Focused</div>
         </div>
 
 
@@ -114,7 +117,7 @@
                 stroke-linejoin="round" stroke-width="16" />
             </svg>
           </div>
-          <div class="psycho-title">LIBIDO</div>
+          <div class="psycho-title"></div>
         </div>
 
 
@@ -140,8 +143,8 @@
       </div>
 
       <div>
-        <button class="btn btn-primary">
-          <i class="bi bi-music-note-beamed"></i> Exemple simple
+        <button class="btn btn-dark">
+          <i class="bi bi-music-note-beamed"></i> restore system
         </button>
       </div>
     </div>

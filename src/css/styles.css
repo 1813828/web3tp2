@@ -3,15 +3,33 @@
   src: url("https://assets.codepen.io/9367036/Ninjargon-Regular.otf");
 }
 
+@font-face {
+  font-family: "Maveric";
+  src: url("/assets/font/Maveric Demo.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "Robocop";
+  src: url("/assets/font/Robocops-Demo.otf") format("opentype");
+}
+
+@font-face {
+  font-family: "alerte";
+  src: url("/assets/font/m12.TTF") format("truetype");
+}
+
+
 
 html {
   height: 100%;
 }
 
 body {
+  width: 100vw;
   height: 100vh;
   margin: 0;        /* retire la marge par défaut qui crée un débordement */
-  background-color: #1e293b;
+  background-color: #020617;
+ 
 }
 
 .grille_01 {
@@ -47,18 +65,21 @@ body {
 
 .system {
   background-color: #020617;
+  border: 3px solid white;
 }
 
 .alert {
-  background-color: yellow;
+  background-color: #020617;
+   border: 3px solid white;
 }
 
 .psycho {
-  background-color: red;
+  background-color: #020617;
   grid-column: span 2 / span 2;
   height: 100%;
   display: flex;
   justify-content: space-around;
+  border: 3px solid white;
 }
 
 .psycho div {
@@ -70,26 +91,30 @@ body {
 
 .psycho-title {
   font-size: 20px;
-  color: rebeccapurple;
+  color: rgb(0, 146, 172);
   margin-top: 8px;
   font-weight: bold;
+  font-family: Maveric ;
 }
 
 .cpu {
-  background-color: green;
+  background-color: #020617;
+   border: 3px solid white;
 }
 
 .objectif {
-  background-color: purple;
+  background-color: #020617;
   overflow: hidden;
+  border: 3px solid white;
 }
 
 .corps {
-  background-color: blue;
+  background-color: #020617;
   grid-column: span 2 / span 2;
   display: flex;
   flex-direction: column;
   gap: 24px;
+   border: 3px solid white;
 }
 
 
@@ -105,8 +130,9 @@ body {
   text-align: center;
 
   &.alt {
-    font-family: Ninjargon;
+    font-family: alerte ;
     font-size: 70px;
+    color: rgb(110, 4, 0);
   }
 }
 
@@ -119,6 +145,8 @@ body {
     left: 50%;
     transform: translate(-50%, -50%);
     font-size: 20px;
+    font-family:alerte;
+    color: aqua;
   }
 
   svg {
@@ -131,6 +159,11 @@ body {
   height: 250px;
   position: relative;
   overflow: hidden;
+  
 }
 
+.btn-dark {
+  font-family:Maveric ;
+  
+}
 

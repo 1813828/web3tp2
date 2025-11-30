@@ -18,11 +18,11 @@ let graphique = new Chart(document.querySelector("canvas").getContext("2d"), {
       {
         label: "-",
         data: data,
-        borderWidth: 2,
+        borderWidth: 10,
         tension: 0.3, // 0 linéaire, 0.5 smooth
         fill: true,
-        borderColor: "rgba(239, 85, 82, 1)",
-        backgroundColor: "rgba(239, 85, 82, 0)",
+        borderColor: "rgba(100, 0, 0, 1)",
+        backgroundColor: "rgba(175, 85, 0, 0)",
         pointRadius: 0,
       },
     ],
@@ -100,21 +100,25 @@ new Chart(document.querySelector("#a").getContext("2d"), {
   type: "bar",
   data: {
     labels: [
-      "Rire",
-      "Musique",
-      "Inspirant",
-      "Honnête",
-      "Unique",
-      "Célébrités",
-      "Valeurs",
-      "Émouvant"
+      "brain",
+      "Armored torso",
+      "Cybernetic arms",
+      "hydraulic legs",
+      "computer ",
+      "artificial heart",
+      "exoskeleton",
+      "computer system",
+      
     ],
+    
+   
     datasets: [
       {
-        label: "% de répondants",
-        data: [49, 49, 42, 42, 37, 31, 31, 23],
-        backgroundColor: ["rgba(239, 85, 85, 0.5)"],
+        label: "System status",
+        data: [100, 80, 60, 50, 60, 31, 31, 23],
+        backgroundColor: ["rgba(175, 85, 0, 0.5)"],
         borderWidth: 1,
+        
         borderRadius: 4
       }
     ]
@@ -126,10 +130,10 @@ new Chart(document.querySelector("#a").getContext("2d"), {
       title: {
         display: true,
         text:
-          "Éléments publicitaires qui captent l’attention de la génération Z américaine (T4 2024)",
+          "État du système",
         color: "#fff",
         font: {
-          family: "Arial",
+          family: "Maveric",
           size: 16,
           weight: "700"
         },
@@ -143,7 +147,11 @@ new Chart(document.querySelector("#a").getContext("2d"), {
         // max: 100,
         title: {
           display: true,
-          text: "% de répondants"
+          text: "Unit health %",
+          font: {
+            family: "alerte",
+            color: "#ffffffff",
+          }
         },
         grid: {
           color: "rgba(222, 222, 222, 0.1)",
@@ -156,7 +164,7 @@ new Chart(document.querySelector("#a").getContext("2d"), {
         },
         ticks: {
           display: true,
-          color: "#fff",
+          color: "#ffffffff",
           font: {
             family: "Arial",
             size: 11,
@@ -171,7 +179,7 @@ new Chart(document.querySelector("#a").getContext("2d"), {
 
       x: {
         title: {
-          text: "Éléments publicitaires",
+          text: "upgrade elements",
           display: true
         },
         ticks: {
