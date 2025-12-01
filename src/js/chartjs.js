@@ -116,7 +116,7 @@ new Chart(document.querySelector("#a").getContext("2d"), {
       {
         label: "System status",
         data: [100, 80, 60, 50, 60, 31, 31, 23],
-        backgroundColor: ["rgba(175, 85, 0, 0.5)"],
+        backgroundColor: ["rgba(226, 112, 6, 0.97)"],
         borderWidth: 1,
         
         borderRadius: 4
@@ -130,7 +130,7 @@ new Chart(document.querySelector("#a").getContext("2d"), {
       title: {
         display: true,
         text:
-          "État du système",
+          "System status",
         color: "#fff",
         font: {
           family: "Maveric",
