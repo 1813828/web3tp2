@@ -1,11 +1,9 @@
 import { VFX } from "vfx-js";
 
-document.addEventListener("DOMContentLoaded", () => {
-  const vfx = new VFX();
-  const page = document.body;
+const vfx = new VFX();
 
-  vfx.add(page, {
-    shader: "glitch",
-    overflow: 30
-  });
+const el = document.querySelector(".robocop img");
+vfx.add(el, {
+  shader: "rgbShift",
+  overflow: 30
 });
