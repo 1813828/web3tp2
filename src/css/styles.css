@@ -168,7 +168,7 @@ body {
 }
 
 .robocop img {
-  width: 320px; /* change la valeur pour la taille que tu veux */
+  width: 320px; 
 }
 .ma-video {
   position: absolute;

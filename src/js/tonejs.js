@@ -1,8 +1,11 @@
-import * as Tone from "https://esm.sh/tone@15.1.22";
+import * as Tone from "tone.js";
 
-document.querySelector(".btn-dark").addEventListener("click", async () => {
+const player = new Tone.Player("./assets/audio/robocop.mp3").toDestination();
+
+document.querySelector("button").addEventListener("click", async () => {
   await Tone.start();
 
-  const synth = new Tone.Synth().toDestination();
-  synth.triggerAttackRelease("C5", "8n");
+  Tone.loaded().then(() => {
+      player.start();
+  });
 });
