@@ -21,7 +21,7 @@ let graphique = new Chart(document.querySelector("canvas").getContext("2d"), {
         borderWidth: 10,
         tension: 0.3, // 0 linéaire, 0.5 smooth
         fill: true,
-        borderColor: "rgba(100, 0, 0, 1)",
+        borderColor: "rgba(10, 161, 60)",
         backgroundColor: "rgba(175, 85, 0, 0)",
         pointRadius: 0,
       },
@@ -116,7 +116,7 @@ new Chart(document.querySelector("#a").getContext("2d"), {
       {
         label: "System status",
         data: [100, 80, 60, 50, 60, 31, 31, 23],
-        backgroundColor: ["rgba(226, 112, 6, 0.97)"],
+        backgroundColor: ["rgba(10, 161, 60)"],
         borderWidth: 1,
         
         borderRadius: 4

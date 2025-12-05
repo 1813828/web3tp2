@@ -10,7 +10,7 @@ new Zdog.Ellipse({
   addTo: illo,
   diameter: 100,
   stroke: 40,
-  color: "#f4f4f5"
+  color: "rgb(10, 161, 60)"
 });
 
 // 👇
